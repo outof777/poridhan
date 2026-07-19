@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>পরিধান | Contemporary Bengali Couture</title>
+<meta name="description" content="পরিধান — প্রিমিয়াম কোয়ালিটির ফ্যাশন ব্র্যান্ড। আভিজাত্য, ঐতিহ্য ও আধুনিকতার মেলবন্ধন।">
+
+<!-- Google Fonts: Bengali serif display + Bengali sans body + Latin utility face -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;500;600;700&family=Hind+Siliguri:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ CUSTOM CURSOR (decorative, desktop only via CSS) ============ -->
+<div class="thread-cursor" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="logo">পরিধান</a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#top" class="nav-link">হোম</a>
+      <a href="#collection" class="nav-link">সংগ্রহ</a>
+      <a href="#faq" class="nav-link">প্রশ্নোত্তর</a>
+      <a href="#contact" class="nav-link">যোগাযোগ</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="খুঁজুন">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </button>
+      <button class="icon-btn cart-btn" aria-label="ব্যাগ">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="মেনু" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=1600&auto=format&fit=crop" alt="পরিধান ফ্যাশন সংগ্রহ" class="hero-img">
+      <div class="hero-scrim"></div>
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow reveal-up">Contemporary Bengali Couture</p>
+      <h1 class="hero-title">
+        <span class="reveal-line"><span class="reveal-up">প্রতিটি সুতোয়</span></span>
+        <span class="reveal-line"><span class="reveal-up">লেখা আভিজাত্য</span></span>
+      </h1>
+      <p class="hero-sub reveal-up">ঐতিহ্যবাহী বুনন আর আধুনিক ডিজাইনের নিখুঁত মেলবন্ধনে তৈরি পোশাক — যা শুধু পরিধান নয়, একটি অভিব্যক্তি।</p>
+      <div class="hero-cta reveal-up">
+        <a href="#collection" class="btn btn-gold">সংগ্রহ দেখুন</a>
+        <a href="#contact" class="btn btn-ghost">যোগাযোগ করুন</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint" aria-hidden="true">
+      <span></span>
+      <p>স্ক্রল করুন</p>
+    </div>
+  </section>
+
+  <!-- ============ SIGNATURE: GOLDEN STITCH DIVIDER ============ -->
+  <div class="stitch-divider" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <path id="stitchPath" class="stitch-path" d="M0,30 C150,60 250,0 400,30 C550,60 650,0 800,30 C950,60 1050,0 1200,30" />
+    </svg>
+  </div>
+
+  <!-- ============ PRODUCT SHOWCASE ============ -->
+  <section class="collection" id="collection">
+    <div class="section-head">
+      <p class="eyebrow">সংগ্রহ</p>
+      <h2>নতুন কালেকশন</h2>
+      <p class="section-desc">যত্নসহকারে বাছাই করা প্রতিটি পোশাক, উৎকৃষ্ট মানের কাপড় ও হাতের নিখুঁত কাজে তৈরি।</p>
+    </div>
+
+    <div class="product-grid" id="productGrid">
+      <!-- Product cards are rendered here by JavaScript from a data array -->
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="section-head">
+      <p class="eyebrow">সহায়তা</p>
+      <h2>সচরাচর জিজ্ঞাসা</h2>
+    </div>
+
+    <div class="faq-list" id="faqList">
+      <div class="faq-item" data-open="false">
+        <button class="faq-question">
+          <span>পণ্যের মান কেমন?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <p>আমরা ১০০% প্রিমিয়াম কোয়ালিটির কাপড় নিশ্চিত করি।</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-open="false">
+        <button class="faq-question">
+          <span>ডেলিভারি চার্জ কত?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <p>ঢাকা শহরের ভেতরে ৫০ টাকা এবং বাইরে ১০০ টাকা।</p>
+        </div>
+      </div>
+
+      <div class="faq-item" data-open="false">
+        <button class="faq-question">
+          <span>পণ্য ফেরত দেওয়ার নিয়ম কী?</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+        <div class="faq-answer">
+          <p>পণ্য গ্রহণের ৭ দিনের মধ্যে কোনো সমস্যা থাকলে আমাদের সাথে যোগাযোগ করুন।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+
+      <div class="contact-info">
+        <p class="eyebrow eyebrow-light">যোগাযোগ</p>
+        <h2>চলুন কথা বলি</h2>
+        <p class="section-desc section-desc-light">যেকোনো জিজ্ঞাসা বা অর্ডারের জন্য নিচের মাধ্যমে যোগাযোগ করুন — আমরা সবসময় প্রস্তুত।</p>
+
+        <ul class="info-list">
+          <li>
+            <span class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </span>
+            <div><span class="info-label">ফোন</span><a href="tel:+8801XXXXXXXXX">+৮৮০ ১XXX-XXXXXX</a></div>
+          </li>
+          <li>
+            <span class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z" fill="none"/><path d="m22 6-10 7L2 6"/><path d="M2 6h20v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/></svg>
+            </span>
+            <div><span class="info-label">ইমেইল</span><a href="mailto:hello@poridhan.com">hello@poridhan.com</a></div>
+          </li>
+          <li>
+            <span class="info-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <div><span class="info-label">ঠিকানা</span><span>গুলশান, ঢাকা, বাংলাদেশ</span></div>
+          </li>
+        </ul>
+
+        <div class="social-row">
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-field">
+            <input type="text" id="cf-name" name="name" placeholder=" " required>
+            <label for="cf-name">আপনার নাম</label>
+          </div>
+          <div class="form-field">
+            <input type="email" id="cf-email" name="email" placeholder=" " required>
+            <label for="cf-email">ইমেইল ঠিকানা</label>
+          </div>
+          <div class="form-field">
+            <textarea id="cf-message" name="message" rows="4" placeholder=" " required></textarea>
+            <label for="cf-message">আপনার বার্তা</label>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block">
+            <span class="btn-text">বার্তা পাঠান</span>
+          </button>
+          <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Google Map placeholder — replace the .map-placeholder div with a real <iframe> embed -->
+    <div class="map-placeholder">
+      <div class="map-placeholder-inner">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <p>Google Map এম্বেড এখানে বসবে</p>
+        <span>&lt;iframe src="YOUR_GOOGLE_MAPS_EMBED_URL"&gt;&lt;/iframe&gt;</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <a href="#top" class="logo footer-logo">পরিধান</a>
+    <p>&copy; <span id="year"></span> পরিধান — সর্বস্বত্ব সংরক্ষিত।</p>
+  </div>
+</footer>
+
+<!-- Toast for "Order Now" feedback -->
+<div class="toast" id="toast"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
